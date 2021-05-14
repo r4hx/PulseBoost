@@ -1,0 +1,9 @@
+# docker-compose.yml
+version: '3'
+
+services:
+  app:
+    build: .
+    container_name: 'PulseBoost'
+    restart: always
+    command: ["python3", "/app/app.py"]
